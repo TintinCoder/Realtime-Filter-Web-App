@@ -7,9 +7,15 @@ body {
 }
 
 canvas {
+    transition: all 0.2 ease;
     animation: anime;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+canvas:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 @keyframes anime {
