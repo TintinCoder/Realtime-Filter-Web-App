@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(202, 129, 141);
+}
+
+.btn {
+    margin: 10px;
+}
+
+canvas {
+    animation: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    from {
+        box-shadow: 1px 1px 20px red;
+    }
+    to {
+        box-shadow: 1px 1px 20px yellow;
+    }
+}
