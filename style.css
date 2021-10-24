@@ -7,7 +7,8 @@ body {
 }
 
 canvas {
-    transition: all 0.2 ease;
+    transition: all 1.0s ease;
+    transform: scale(1.1);
     animation: anime;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -15,14 +16,16 @@ canvas {
 
 canvas:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    border: 2px solid black;
 }
 
 @keyframes anime {
     from {
         box-shadow: 1px 1px 20px red;
+        /* transform: scale(1.1); */
     }
     to {
         box-shadow: 1px 1px 20px yellow;
+        /* transform: scale(); */
     }
 }
